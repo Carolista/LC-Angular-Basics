@@ -20,11 +20,11 @@ export class AppComponent {
   // TODO: Declare a field called 'imageURL' for the path to your image (a string). Under 'src' in the file tree, you'll see a folder called 'assets', and another folder inside that called 'images.' That's where you should put your image file.
   
 
-  // Here's a quick method to take thingOne & thingTwo and create your title.
-  createTitle(): string {
-    let pageTitle = `${this.thingOne} vs ${this.thingTwo}`; // standard template literal
-    return pageTitle;
-  }
+  // Here's a quick method to take thingOne & thingTwo and create your title. Un-comment it when ready to use.
+//   createTitle(): string {
+//     let pageTitle = `${this.thingOne} vs ${this.thingTwo}`;
+//     return pageTitle;
+//   }
 
   // Could we have just had a single field hold the whole title name? Yes. But then we wouldn't have a handy little example of how to write a method and display it in the HTML template! :-)
 
