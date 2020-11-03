@@ -21,7 +21,7 @@ export class AppComponent {
   // Declare a field called 'imageURL' for the path to your image (a string). Under 'src' in the file tree, you'll see a folder called 'assets', and another folder inside that called 'images.' That's where you should put your image file.
   imageURL: string = '/assets/images/sorbet.png'
 
-  // Here's a quick function to take thingOne & thingTwo and create your title.
+  // Here's a quick method to take thingOne & thingTwo and create your title.
   createTitle(): string {
     let pageTitle = `${this.thingOne} vs ${this.thingTwo}`; // standard template literal
     return pageTitle;
