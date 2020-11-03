@@ -33,12 +33,11 @@ Write a sentence or two for the intro, 2-3 sentences for each of the things you'
 PART C - Styling pages in Angular
 
 STEP 8: 
-You may have noticed that most of the styling is already taken care of in this exercise. Open app.component.css. Where's the CSS? Go open src/styles.css instead. There it is! Angular gives you the ability to set high-level styling for your entire application. Everything here will apply to all components unless you override them. So let's see that in action. Go back to app.component.css and add code to give all h3 elements the color 'darkorchid.' Now everything that was blue is pinkish/purplish. By putting CSS in the component's style sheet, we overrode the general styling for the whole application.
+You may have noticed that most of the styling is already taken care of in this exercise. Open app.component.css. Where's the CSS? Go open src/styles.css instead. There it is! Angular gives you the ability to set high-level styling for your entire application. Everything here will apply to all components unless you override them. So let's see that in action. Go back to app.component.css and add code to give all h3 elements a different color. By putting CSS in the component's style sheet, we overrode the general styling for the whole application.
 
+That's it! Great job.
 
-
-
-
+-------
 HOW TO ENABLE AUTO SAVE IN VSC:
 Open up the settings for VSCode and type "auto save" into the search bar at the top to bring up the options you need to edit. My preferred settings are "after delay" and 1000ms. Once this is enabled, you will not need to manually save your files every time you want to see the changes in the browser - they will just show up as you go!
 

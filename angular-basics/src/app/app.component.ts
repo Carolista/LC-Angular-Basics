@@ -14,14 +14,13 @@ export class AppComponent {
     Remember that Angular uses TypeScript, so variables and methods must be "typed" as a string, number, boolean, etc. Also notice how the fields (TypeScript variables) are NOT declared with 'let', and methods are NOT declared with 'function'. BUT once you are inside a method's brackets {}, you are using regular old JavaScript! Just make sure to refer to the class's global fields and methods with 'this.property' or 'this.method()'.
   */
 
-  // Declare fields (as strings) called 'thingOne' and 'thingTwo' for the two things you'll be writing about.
-  thingOne: string = 'Sorbet';
-  thingTwo: string = 'Sherbet';
+  // TODO: Declare fields (as strings) called 'thingOne' and 'thingTwo' for the two things you'll be writing about.
+ 
 
-  // Declare a field called 'imageURL' for the path to your image (a string). Under 'src' in the file tree, you'll see a folder called 'assets', and another folder inside that called 'images.' That's where you should put your image file.
-  imageURL: string = '/assets/images/sorbet.png'
+  // TODO: Declare a field called 'imageURL' for the path to your image (a string). Under 'src' in the file tree, you'll see a folder called 'assets', and another folder inside that called 'images.' That's where you should put your image file.
+  
 
-  // Here's a quick function to take thingOne & thingTwo and create your title.
+  // Here's a quick method to take thingOne & thingTwo and create your title.
   createTitle(): string {
     let pageTitle = `${this.thingOne} vs ${this.thingTwo}`; // standard template literal
     return pageTitle;
