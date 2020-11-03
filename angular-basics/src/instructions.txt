@@ -1,0 +1,48 @@
+Here are a few basic things to practice to get a little more familiar with Angular. You are going make a short page about two things that people often get confused (or don't even realize that they're not exactly the same thing). Think llamas vs. alpacas, or violins vs. violas, or alligators vs. crocodiles, or macaroon vs. macaron... Whatever you choose, you really only need a couple sentences for each one to explain its unique qualities, so don't think of this as a full-fledged writing assignment.
+
+Note: If you are finding my comments in the code unreadable because the text is not wrapping, scroll down to the bottom of this page to learn how to change that.
+
+PART A - First, let's get oriented within Angular.
+
+STEP 1:
+Go to /src/app and open up app.component.html. You'll notice there are no <html> or <body> tags - that's because components are just blocks of code that are referenced inside other components. 
+
+STEP 2: 
+Open app.component.ts. You see where the @Component decorator is on line 3? You'll notice it holds an object with three properties - the second and third are the html and css documents it uses within the same component, but the first one says 'app-root'. Let's head over to /src/index.html. This is where the main body of the entire application is. You'll see on line 12 a special element called <app-root> -- that represents the app component you were just in. This is how components are placed. 
+
+STEP 3:
+Time to take a look at the page structure (so far) in the browser. Open a terminal (you can do this inside VSCode and it stays handily at the bottom of the screen) and serve your application by typing 'ng serve' at the prompt. Make sure you are inside the project directory 'angular-basics' or one of its subdirectories, like 'src'. Go to localhost:4200 in your browser, and you should see the new content on the page.
+
+Note: If you don't have auto-save enabled in your IDE, you will need to save them manually after making changes before they will show up in the browser. (Scroll down to the bottom to learn how to enable this feature.) 
+
+
+PART B - Now you get to personalize your page! 
+
+STEP 4:
+While you're in index.html, edit the paragraph in the footer so it shows your own name. Take a look in the browser (saving first, if necessary) and you'll see your name at the bottom! As you make more changes, continue to watch the page update in the browser.
+
+STEP 5:
+Go to app.component.ts and look at what you need to create - three fields (the term for a global property in TypeScript) and one method. Follow the instructions on the page to personalize the details. 
+
+STEP 6:
+Head over to app.component.html. Between the <h1> tags you should use an Angular data binding placeholder to call the createTitle() function. Similarly, the image tag should have an Angular placeholder to bind to the imageURL field for the 'src' attribute. If you've referenced both of these correctly, you should see the changes in your browser.
+
+STEP 7:
+Write a sentence or two for the intro, 2-3 sentences for each of the things you're comparing, and another sentence to give each of them a fun fact. Note the changes in the browser.
+
+PART C - Styling pages in Angular
+
+STEP 8: 
+You may have noticed that most of the styling is already taken care of in this exercise. Open app.component.css. Where's the CSS? Go open src/styles.css instead. There it is! Angular gives you the ability to set high-level styling for your entire application. Everything here will apply to all components unless you override them. So let's see that in action. Go back to app.component.css and add code to give all h3 elements the color 'darkorchid.' Now everything that was blue is pinkish/purplish. By putting CSS in the component's style sheet, we overrode the general styling for the whole application.
+
+
+
+
+
+HOW TO ENABLE AUTO SAVE IN VSC:
+Open up the settings for VSCode and type "auto save" into the search bar at the top to bring up the options you need to edit. My preferred settings are "after delay" and 1000ms. Once this is enabled, you will not need to manually save your files every time you want to see the changes in the browser - they will just show up as you go!
+
+HOW TO ENABLE WORD WRAP IN VSC:
+Open up the settings for VSC and type "word wrap" into the search bar at the top. Under Editor: Word Wrap, I have mine set to "on", but there are other options.
+
+
